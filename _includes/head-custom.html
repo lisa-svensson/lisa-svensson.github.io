@@ -19,8 +19,12 @@
   
   
   document.addEventListener("DOMContentLoaded", () => {
-  
-    document.getElementById("read-article-1").addEventListener("click", () => {
+    
+    const readArticle1Button = document.getElementById("read-article-1);
+                                                       
+                                                       
+  if (readArticle1Button){
+    readArticle1Button.addEventListener("click", () => {
         sendReadEvent("Article 1", 50)
     });
     
@@ -31,6 +35,7 @@
     document.getElementById("read-article-3").addEventListener("click", () => {
         sendReadEvent("Article 3", 150)
     });
+  }
     
   });
   

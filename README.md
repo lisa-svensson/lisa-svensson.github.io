@@ -3,3 +3,5 @@
 [Read more](/read-more)
 
 [Articles](/articles)
+
+[Thank you](/thank-you)

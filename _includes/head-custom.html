@@ -9,7 +9,7 @@
   </script>
   
   <script>
-  function sendReadEvent(title, numberOfCharacters) {
+  function sendReadEvent(title, numberOfCharacters, author) {
     gtag('event','read_article', {
       "author":"Lisa S",
       "title": title,
@@ -25,15 +25,15 @@
                                                        
   if (readArticle1Button){
     readArticle1Button.addEventListener("click", () => {
-        sendReadEvent("Article 1", 50)
+        sendReadEvent("Article 1", 50, Lisa S)
     });
     
     document.getElementById("read-article-2").addEventListener("click", () => {
-        sendReadEvent("Article 2", 100)
+        sendReadEvent("Article 2", 100, Rut S)
     });
     
     document.getElementById("read-article-3").addEventListener("click", () => {
-        sendReadEvent("Article 3", 150)
+        sendReadEvent("Article 3", 150, Birger S)
     });
   }
     

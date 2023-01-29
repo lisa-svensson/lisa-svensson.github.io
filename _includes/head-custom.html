@@ -22,31 +22,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   
   <script>
-  function sendReadEvent(artikelnamn, lästid) {
-    gtag('event','läst_artikel', {
-      "artikelnamn": artikelnamn,
+  function sendReadEvent(articleName, readingTime) {
+    gtag('event','read_article', {
+      "articleName": articleName,
       "title": title,
-      "lästid": lästid,
+      "lästid": readingTime,
     });
   }
   
   
   document.addEventListener("DOMContentLoaded", () => {
     
-    const readArticle1Button = document.getElementById("läst-artikel-1");
+    const readArticle1Button = document.getElementById("read-article-1");
                                                        
                                                        
   if (readArticle1Button){
     readArticle1Button.addEventListener("click", () => {
-        sendReadEvent("Artikel 1", 5)
+        sendReadEvent("Article 1", 5)
     });
     
-    document.getElementById("läst-artikel-2").addEventListener("click", () => {
-        sendReadEvent("Artikel 2", 8)
+    document.getElementById("read-article-2").addEventListener("click", () => {
+        sendReadEvent("Article 2", 8)
     });
     
-    document.getElementById("läst-artikel-3").addEventListener("click", () => {
-        sendReadEvent("Artikel 3", 10)
+    document.getElementById("read-article-3").addEventListener("click", () => {
+        sendReadEvent("Article 3", 10)
     });
   }
     

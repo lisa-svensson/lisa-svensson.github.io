@@ -1,4 +1,4 @@
-# Articles
+# Artiklar
 
 ## Artikel 1
 

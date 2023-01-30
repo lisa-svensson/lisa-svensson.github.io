@@ -6,9 +6,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N72MDLV');</script>
 <!-- End Google Tag Manager -->
   
-<script>
+ <script>
+    function sendReadEvent(articleName, readingTime) {
+         gtag('event', 'read_article', {
+            "article_name": articleName,
+            "reading_time": readingTime,
+        });
+    }
   
-  console.log("2023-01-30 1845")
+  
+    document.addEventListener("DOMContentLoaded", () => {
+    
+        const readArticle1Button = document.getElementById("read-article-1");
+                                                       
+                                                       
+        if (readArticle1Button){
+            readArticle1Button.addEventListener("click", () => {
+                sendReadEvent("Article 1", 5)
+            });
+    
+            document.getElementById("read-article-2").addEventListener("click", () => {
+                sendReadEvent("Article 2", 8)
+            });
+    
+            document.getElementById("read-article-3").addEventListener("click", () => {
+                sendReadEvent("Article 3", 16)
+            });
+        }
+    });
+  
+  
+  console.log("2023-01-30 1850")
   
 </script>
 

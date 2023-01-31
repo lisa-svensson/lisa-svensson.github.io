@@ -12,6 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  
   gtag('config', 'G-E1X0G4LV12');
   </script>
 
@@ -25,10 +26,10 @@ function sendReadEvent(articleName, readingTime) {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  const readArticleButton = document.getElementById("read-article-1");
+  const readArticle1Button = document.getElementById("read-article-1");
   
-  if(readArticleButton){
-    readArticleButton.addEventListener("click", () => {
+  if(readArticle1Button){
+    readArticle1Button.addEventListener("click", () => {
       sendReadEvent("Article 1", 5)
     });
   

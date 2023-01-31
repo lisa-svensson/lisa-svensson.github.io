@@ -7,27 +7,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <script>
-function sendReadEvent(articleName, readingTime)
+function sendReadEvent(articleName, readingTime) {
   gtag('event','read_article', {
       "article_name": articleName,
       "reading_time": readingTime,
     });
+ }    
 
 document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("read-article-1").addEventListener("click", () => {
     sendReadEvent("Article 1", 5)
-  })
+  });
   
   document.getElementById("read-article-1").addEventListener("click", () => {
     sendReadEvent("Article 2", 8)
-  })
+  });
   
   document.getElementById("read-article-1").addEventListener("click", () => {
     sendReadEvent("Article 3", 16)
-  })
+  });
   
 });
 
-console.log("20230131")
+  console.log("2023-01-31")
 </script>
